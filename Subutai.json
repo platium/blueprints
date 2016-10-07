@@ -1,13 +1,35 @@
 {
-  "name": "Test",
-  "sshGroupId" : 0,
-  "hostGroupId":0,
-  "nodes" : [
+  "name": "My-Cassandra-cluster",
+  "nodes": [
     {
-      "name":"Container_1",
-      "size" :"TINY",
-      "templateName" : "master",
-	"templateId" : "a697e70f3fc538b4f4763588a7868388"
+      "name": "cassandra_seed_1",
+      "template": "cassandra",
+      "peer_group": "US-GROUP",
+      "size":"TINY",
+      
+
     }
-  ]
+  ],
+  "peer_groups": [
+    {
+      "name": "US-GROUP",
+      "pricing_pref": {},
+      "hw_pref": {},
+      "zone_pref": {},
+      "proximity_pref": {}
+    },
+    {
+      "name": "EU-GROUP"
+    }
+  ],
+  "configuration": {
+    "plugin": "cassandra",
+    "params":
+      {
+        "seeds": "cassandra_seed_1,cassandra_seed_2",
+         "dataDirectory": "/var/lib/cassandra/data",
+        "commitLogDirectory": "/var/lib/cassandra/commitlog",
+        "savedCachesDirectory": "/var/lib/cassandra/saved_caches"
+      }
+  }
 }
