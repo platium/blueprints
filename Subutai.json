@@ -5,7 +5,15 @@
       "name": "cassandra_seed_1",
       "template": "cassandra",
       "peer_group": "US-GROUP",
-      "size":"TINY",
+      "size":"TINY"
+      
+
+    },
+    {
+      "name": "cassandra_seed_2",
+      "template": "cassandra",
+      "peer_group": "US-GROUP",
+      "size":"SMALL"
       
 
     }
