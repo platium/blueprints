@@ -6,16 +6,24 @@
       "template": "cassandra",
       "peer_group": "US-GROUP",
       "size":"TINY"
-      
-
     },
     {
       "name": "cassandra_seed_2",
       "template": "cassandra",
       "peer_group": "US-GROUP",
       "size":"SMALL"
-      
-
+    },
+    {
+      "name": "cassandra_data_1",
+      "template": "cassandra",
+      "peer_group": "US-GROUP",
+      "size":"LARGE"
+    },
+    {
+      "name": "cassandra_data_2",
+      "template": "cassandra",
+      "peer_group": "US-GROUP",
+      "size":"LARGE"
     }
   ],
   "peer_groups": [
