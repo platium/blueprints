@@ -1,0 +1,51 @@
+{
+  "name": "My-Cassandra-cluster",
+  "nodes": [
+    {
+      "name": "cassandra_seed_1",
+      "template": "cassandra",
+      "peer_group": "US-GROUP",
+      "size":"TINY"
+    },
+    {
+      "name": "cassandra_seed_2",
+      "template": "cassandra",
+      "peer_group": "US-GROUP",
+      "size":"SMALL"
+    },
+    {
+      "name": "cassandra_data_1",
+      "template": "cassandra",
+      "peer_group": "US-GROUP",
+      "size":"LARGE"
+    },
+    {
+      "name": "cassandra_data_2",
+      "template": "cassandra",
+      "peer_group": "US-GROUP",
+      "size":"LARGE"
+    }
+  ],
+  "peer_groups": [
+    {
+      "name": "US-GROUP",
+      "pricing_pref": {},
+      "hw_pref": {},
+      "zone_pref": {},
+      "proximity_pref": {}
+    },
+    {
+      "name": "EU-GROUP"
+    }
+  ],
+  "configuration": {
+    "plugin": "cassandra",
+    "params":
+      {
+        "seeds": "cassandra_seed_1,cassandra_seed_2",
+         "dataDirectory": "/var/lib/cassandra/data",
+        "commitLogDirectory": "/var/lib/cassandra/commitlog",
+        "savedCachesDirectory": "/var/lib/cassandra/saved_caches"
+      }
+  }
+}
