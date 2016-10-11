@@ -4,22 +4,22 @@
     {
       "name": "cassandra_seed_1",
       "template": "cassandra",
-      "peer_group": "US-GROUP",
+      "peer_group": "US-GROUP"
     },
     {
       "name": "cassandra_seed_2",
       "template": "cassandra",
-      "peer_group": "US-GROUP",
+      "peer_group": "US-GROUP"
     },
     {
       "name": "cassandra_data_1",
       "template": "cassandra",
-      "peer_group": "US-GROUP",
+      "peer_group": "US-GROUP"
     },
     {
       "name": "cassandra_data_2",
       "template": "cassandra",
-      "peer_group": "US-GROUP",
+      "peer_group": "US-GROUP"
     }
   ],
   "peer_groups": [
