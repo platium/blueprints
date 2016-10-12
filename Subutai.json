@@ -1,5 +1,6 @@
 {
   "name": "My-Cassandra-cluster",
+  "description":"This is a sample Cassandra cluster",
   "nodes": [
     {
       "name": "cassandra_seed_1",
