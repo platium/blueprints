@@ -32,8 +32,8 @@
 	"name": "US-GROUP",
 	"pricingPref": {},
 	"hwPreferences": {
-	    "cpuAvgLoad": "50",
-	    "ramAvgLoad": "60",
+	    "avgCpuLoad": "50",
+	    "avgRamLoad": "60",
 	    "minFreeDiskSpace": "100GiB"
 	},
 	"zonePrefences": {},
