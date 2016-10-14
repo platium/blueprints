@@ -34,7 +34,7 @@
 	"hwPreferences": {
 	    "avgCpuLoad": "50",
 	    "minFreeRam": "128MiB",
-	    "minFreeDiskSpace": "10GiB"
+	    "minFreeDiskSpace": "500MiB"
 	},
 	"zonePreferences": {},
 	"proximityPreferences": {}
