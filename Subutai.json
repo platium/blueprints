@@ -33,7 +33,7 @@
 	"pricingPref": {},
 	"hwPreferences": {
 	    "avgCpuLoad": "50",
-	    "avgRamLoad": "60",
+	    "minFreeRam": "10GiB",
 	    "minFreeDiskSpace": "100GiB"
 	},
 	"zonePreferences": {},
