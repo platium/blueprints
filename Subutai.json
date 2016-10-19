@@ -30,6 +30,7 @@
     }],
     "peerGroups": [{
 	"name": "US-GROUP",
+	"pricingPref" : { "maxPrice":"20"},
 	"hwPreferences": {
 	    "avgCpuLoad": "50",
 	    "minFreeRam": "128MiB",
