@@ -2,22 +2,32 @@
     "name": "My-Cassandra-cluster",
     "description": "The sample cassandra cluster",
     "nodes": [{
-	"name": "cassandra_1",
+	"name": "cassandra_seed_1",
 	"template": "cassandra37@bea6be9bd9d7fb8e61182752cd592fd11b534af7",
 	"peer_group": "US-GROUP",
 	"size": "MEDIUM"
     }, {
-	"name": "cassandra_2",
+	"name": "cassandra_seed_2",
 	"template": "cassandra37@bea6be9bd9d7fb8e61182752cd592fd11b534af7",
 	"peer_group": "EU-GROUP",
 	"size": "MEDIUM"
     }, {
-	"name": "cassandra_3",
+	"name": "cassandra_data_1",
 	"template": "cassandra37@bea6be9bd9d7fb8e61182752cd592fd11b534af7",
-	"peer_group": "US-GROUP",
-	"size": "LARGE"
-    } 
-    ],
+	"peer_group": "US-GROUP"
+    }, {
+	"name": "cassandra_data_2",
+	"template": "cassandra37@bea6be9bd9d7fb8e61182752cd592fd11b534af7",
+	"peer_group": "US-GROUP"
+    }, {
+	"name": "cassandra_data_3",
+	"template": "cassandra37@bea6be9bd9d7fb8e61182752cd592fd11b534af7",
+	"peer_group": "EU-GROUP"
+    }, {
+	"name": "cassandra_data_4",
+	"template": "cassandra37@bea6be9bd9d7fb8e61182752cd592fd11b534af7",
+	"peer_group": "EU-GROUP"
+    }],
     "peerGroups": [{
 	"name": "US-GROUP",
 	"pricingPref": {
