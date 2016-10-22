@@ -1,21 +1,21 @@
 {
-    "name": "My-Cassandra-cluster",
-    "description": "The sample cassandra cluster",
+    "name": "My-Hadoop-cluster",
+    "description": "The sample hadoop cluster",
     "nodes": [{
-	"name": "cassandra_1",
-	"template": "cassandra37@bea6be9bd9d7fb8e61182752cd592fd11b534af7",
+	"name": "hadoop_1",
+	"template": "hadoop27",
 	"peer_group": "US-GROUP",
-	"size": "MEDIUM"
+	"size": "HUGE"
     }, {
-	"name": "cassandra_2",
-	"template": "cassandra37@bea6be9bd9d7fb8e61182752cd592fd11b534af7",
+	"name": "hadoop_2",
+	"template": "hadoop27",
 	"peer_group": "EU-GROUP",
-	"size": "MEDIUM"
+	"size": "HUGE"
     }, {
-	"name": "cassandra_3",
-	"template": "cassandra37@bea6be9bd9d7fb8e61182752cd592fd11b534af7",
+	"name": "hadoop_3",
+	"template": "hadoop27",
 	"peer_group": "US-GROUP",
-	"size": "LARGE"
+	"size": "HUGE"
     } 
     ],
     "peerGroups": [{
