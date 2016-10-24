@@ -2,17 +2,17 @@
     "name": "My-Hadoop-cluster",
     "description": "The sample hadoop cluster",
     "nodes": [{
-	"name": "hadoop_name_node",
+	"name": "hadoop-name-node",
 	"template": "hadoop27@bea6be9bd9d7fb8e61182752cd592fd11b534af7",
 	"peer_group": "US-GROUP",
 	"size": "LARGE"
     }, {
-	"name": "hadoop_2",
+	"name": "hadoop-2",
 	"template": "hadoop27@bea6be9bd9d7fb8e61182752cd592fd11b534af7",
 	"peer_group": "US-GROUP",
 	"size": "LARGE"
     }, {
-	"name": "hadoop_3",
+	"name": "hadoop-3",
 	"template": "hadoop27@bea6be9bd9d7fb8e61182752cd592fd11b534af7",
 	"peer_group": "US-GROUP",
 	"size": "LARGE"
@@ -35,7 +35,7 @@
 	"plugin": "hadoop",
 	"params": {
 	    "clusterName": "HadoopCluster",
-	    "nameNode": "hadoop_name_node",
+	    "nameNode": "hadoop-name-node",
 	    "replicationFactor": "2"
 	}
     }
