@@ -3,17 +3,17 @@
     "description": "The sample hadoop cluster",
     "nodes": [{
 	"name": "esearch-1",
-	"template": "elasticsearch",
+	"template": "elasticsearch235",
 	"peer_group": "US-GROUP",
 	"size": "LARGE"
     }, {
 	"name": "esearch-2",
-	"template": "elasticsearch",
+	"template": "elasticsearch235",
 	"peer_group": "EU-GROUP",
 	"size": "LARGE"
     }, {
 	"name": "esearch-3",
-	"template": "elasticsearch",
+	"template": "elasticsearch235",
 	"peer_group": "US-GROUP",
 	"size": "LARGE"
     }],
