@@ -36,7 +36,8 @@
     "configuration": {
 	"plugin": "mongo",
 	"params": {
-	    "clusterName": "mongoCluster"
+	    "clusterName": "mongoCluster",
+	    "replicaSetName": "repl0"
 	}
     }
 }
