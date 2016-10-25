@@ -3,17 +3,17 @@
     "description": "The sample zookeeper cluster",
     "nodes": [{
 	"name": "zookeeper-1",
-	"template": "zookeeper",
+	"template": "zookeeper349",
 	"peer_group": "US-GROUP",
 	"size": "LARGE"
     }, {
 	"name": "zookeeper-2",
-	"template": "zookeeper",
+	"template": "zookeeper349",
 	"peer_group": "EU-GROUP",
 	"size": "LARGE"
     }, {
 	"name": "zookeeper-3",
-	"template": "zookeeper",
+	"template": "zookeeper349",
 	"peer_group": "US-GROUP",
 	"size": "LARGE"
     }],
