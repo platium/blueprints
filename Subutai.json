@@ -38,8 +38,7 @@
 	"params": {
 	    "clusterName": "sparkHadoopCluster",
 	    "nameNode": "hadoop-name-node",
-	    "replicationFactor": "2",
-	    "password": "my_secret_password"
+	    "replicationFactor": "2"
 	}
     }
 }
