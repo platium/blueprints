@@ -38,7 +38,8 @@
 	"params": {
 	    "clusterName": "accumuloHadoopCluster",
 	    "nameNode": "hadoop-name-node",
-	    "replicationFactor": "2"
+	    "replicationFactor": "2",
+	    "password": "my_secret_password"
 	}
     }
 }
