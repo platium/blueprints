@@ -19,6 +19,7 @@
     }],
     "peerGroups": [{
 	"name": "US-GROUP",
+	"uptime":"99.9999",
 	"pricingPref": {
 	    "maxPrice": "20"
 	},
