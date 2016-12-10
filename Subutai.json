@@ -1,5 +1,5 @@
 {
-    "name": "My-taskapp-cluster",
+    "name": "My-taskapp-cluster-768",
     "description": "The sample taskapp cluster",
     "nodes": [{
         "name": "cassandra-1",
@@ -24,7 +24,7 @@
         },
         "hwPreferences": {
             "avgCpuLoad": "10",
-            "minFreeRam": "1024MiB",
+            "minFreeRam": "768MiB",
             "minFreeDiskSpace": "500MiB"
         },
         "zonePreferences": {},
@@ -33,14 +33,14 @@
         "name": "GROUP2",
         "hwPreferences": {
             "avgCpuLoad": "10",
-            "minFreeRam": "1024MiB",
+            "minFreeRam": "768MiB",
             "minFreeDiskSpace": "500MiB"
         }
     }, {
         "name": "GROUP3",
         "hwPreferences": {
             "avgCpuLoad": "10",
-            "minFreeRam": "1024MiB",
+            "minFreeRam": "768MiB",
             "minFreeDiskSpace": "500MiB"
         }
     }],
