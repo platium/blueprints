@@ -1,20 +1,10 @@
 {
-    "name": "My-taskapp-cluster-768",
-    "description": "The sample taskapp cluster",
+    "name": "My-master-cluster",
+    "description": "The sample master cluster",
     "nodes": [{
-        "name": "cassandra-1",
+        "name": "master-1",
         "template": "taskapp@4d778697b6ad899189adb914b42a2fa9bb2a61aa",
         "peer_group": "GROUP1",
-        "size": "LARGE"
-    }, {
-        "name": "cassandra-2",
-        "template": "taskapp@4d778697b6ad899189adb914b42a2fa9bb2a61aa",
-        "peer_group": "GROUP2",
-        "size": "LARGE"
-    }, {
-        "name": "cassandra-3",
-        "template": "taskapp@4d778697b6ad899189adb914b42a2fa9bb2a61aa",
-        "peer_group": "GROUP3",
         "size": "LARGE"
     }],
     "peerGroups": [{
@@ -24,29 +14,14 @@
         },
         "hwPreferences": {
             "avgCpuLoad": "10",
-            "minFreeRam": "768MiB",
+            "minFreeRam": "128MiB",
             "minFreeDiskSpace": "500MiB"
         },
         "zonePreferences": {},
         "proximityPreferences": {}
-    }, {
-        "name": "GROUP2",
-        "hwPreferences": {
-            "avgCpuLoad": "10",
-            "minFreeRam": "768MiB",
-            "minFreeDiskSpace": "500MiB"
-        }
-    }, {
-        "name": "GROUP3",
-        "hwPreferences": {
-            "avgCpuLoad": "10",
-            "minFreeRam": "768MiB",
-            "minFreeDiskSpace": "500MiB"
-        }
     }],
     "sshKey": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCjo6fLXczBYpZTd7dpOZDgiasvuQfjkQNiGyU7MdT3qpr8mbWbrJKhWjjxhsi8N6wlVs5PWwWv6H0SMR+SA5/WwaQ2XVH44Ur1Inuy07UO/RQUE/k8nCt5CE9r1XeJBdVoafzh45IWYmd0nA2dJp0ttA1+lg5D8hkj+PAWgwUME8a3vJYC0tXa3KtEeaGPqjvIQsO/c266HSg9mupoMx7moQ3/LB4o+EmWpR4K5KtPccOmWTm9lpGP+WYkYdBGnZ5zCdagzdHcIa+EBEWOeYy4A50LxZIJvZYTWxhGFtBFXo+SljY8bV01kbCnfdSMfy4URCZPbn3qpZ6cPYUQm047 tzhamakeev@tzhamakeev-HP-ENVY-TS-15-Notebook-PC",
     "configuration": {
-        "plugin": "cassandra",
         "params": {
             "clusterName": "MytaskappCluster"
         }
