@@ -14,7 +14,7 @@
     }, {
 	"name": "storm-1",
 	"template": "storm",
-	"peer_group": "STORM",
+	"peer_group": "STORM-GROUP",
 	"size": "LARGE"
     }],
     "peerGroups": [{
