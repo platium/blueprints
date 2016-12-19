@@ -1,5 +1,5 @@
 {
-    "name": "Modern Real-Time Big Data Stack",
+    "name": "Modern-Real-Time-Big-Data-Stack",
     "description": "The sample taskapp cluster",
     "nodes": [{
 	"name": "hazelcast-1",
