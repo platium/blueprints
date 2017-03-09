@@ -1,24 +1,24 @@
 {
-    "name": "Modern-Real-Time-Big-Data-Stack",
-    "description": "Modern Real-Time Big Data Stack",
+    "name": "Master1",
+    "description": "Master1",
     "nodes": [{
-	"name": "hazelcast-1",
-	"template": "hazelcast@7e6a231303b69374c6c0e0a4f3df2ffcfc298d3a",
-	"peer_group": "HAZELCAST+TOMCAT-GROUP",
+	"name": "con-1-1",
+	"template": "master",
+	"peer_group": "GROUP1",
 	"size": "SMALL"
     }, {
-	"name": "tomcat8-1",
-	"template": "tomcat8@4361d4648dbe94226a7dceab1978b8fc44f08212",
-	"peer_group": "HAZELCAST+TOMCAT-GROUP",
+	"name": "con-1-2",
+	"template": "master",
+	"peer_group": "GROUP1",
 	"size": "LARGE"
     }, {
-	"name": "storm-1",
-	"template": "storm",
-	"peer_group": "STORM-GROUP",
-	"size": "LARGE"
+	"name": "con-2-1",
+	"template": "master",
+	"peer_group": "GROUP2",
+	"size": "HUGE"
     }],
     "peerGroups": [{
-	"name": "HAZELCAST+TOMCAT-GROUP",
+	"name": "GROUP1",
 	"maxPeersInGroup": "1",
 	"pricingPref": {
 	    "maxPrice": "20"
@@ -31,12 +31,13 @@
 	"zonePreferences": {},
 	"proximityPreferences": {}
     }, {
-	"name": "STORM-GROUP",
+	"name": "GROUP2",
 	"hwPreferences": {
 	    "avgCpuLoad": "10",
 	    "minFreeRam": "768MiB",
 	    "minFreeDiskSpace": "500MiB"
 	}
     }],
+    "sshKey": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCjo6fLXczBYpZTd7dpOZDgiasvuQfjkQNiGyU7MdT3qpr8mbWbrJKhWjjxhsi8N6wlVs5PWwWv6H0SMR+SA5/WwaQ2XVH44Ur1Inuy07UO/RQUE/k8nCt5CE9r1XeJBdVoafzh45IWYmd0nA2dJp0ttA1+lg5D8hkj+PAWgwUME8a3vJYC0tXa3KtEeaGPqjvIQsO/c266HSg9mupoMx7moQ3/LB4o+EmWpR4K5KtPccOmWTm9lpGP+WYkYdBGnZ5zCdagzdHcIa+EBEWOeYy4A50LxZIJvZYTWxhGFtBFXo+SljY8bV01kbCnfdSMfy4URCZPbn3qpZ6cPYUQm047 tzhamakeev@tzhamakeev-HP-ENVY-TS-15-Notebook-PC",
     "configuration": {}
 }
